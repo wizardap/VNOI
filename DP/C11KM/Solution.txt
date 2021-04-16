@@ -1,0 +1,10 @@
+Sử dụng kĩ thuật QHĐ để giải quyết bài toán 
+Gọi f(i,j)  là số tiền nhỏ nhất để mua hết i đơn hàng với j vé miễn phí 
+Có : 
+   - Nếu p[i] > 100 : f(i,j) = min(f(i,j),f(i+1,j+1)+p[i])
+   - Nếu p[i]<=100 : 
+   +) f(i,j) = min(f(i,j),f(i+1,j)+p[i])
+   +) Nếu j >0 : f(i,j) = min(f(i,j),f(i+1,j-1))
+   Trong code sử dụng QHĐ có nhớ
+    
+   
