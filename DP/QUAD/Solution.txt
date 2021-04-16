@@ -1,0 +1,6 @@
+Bài này có thể giải trong O(n) bằng Toán . Nhưng mình sẽ giải bằng quy hoạch động ( có vẻ đúng) . 
+Điều kiện để 4 cạnh tạo thành 1 tứ giác là độ dài từng cạnh nhỏ hơn tổng độ dài 3 cạnh còn lại . Cho nên mình sẽ đặt nhánh cận là với cạnh tối đa có thể tạo được là P=(N-1)/2
+Gọi f[i][j] là số cách tạo thành một tứ giác với độ dài j và hiện tại đang đến miếng gỗ thứ i 
+Cơ sở QHĐ : f[0][0]=1 vì chưa có cạnh nào tạo được và có độ dài là 0 
+  Có f[i][j]=f[i][j]+f[i-1][j-k] (với k thuộc khoảng từ 1 đến min(P,N)) 
+  Trong code mình sử dụng cách QHĐ có nhớ
